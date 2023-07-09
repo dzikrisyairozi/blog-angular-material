@@ -11,6 +11,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatIconModule } from '@angular/material/icon';
+import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
   declarations: [],
@@ -27,6 +28,7 @@ import { MatIconModule } from '@angular/material/icon';
     MatChipsModule,
     MatBadgeModule,
     MatIconModule,
+    MatMenuModule,
   ],
   exports: [
     MatButtonModule,
@@ -40,6 +42,7 @@ import { MatIconModule } from '@angular/material/icon';
     MatChipsModule,
     MatBadgeModule,
     MatIconModule,
+    MatMenuModule,
   ],
 })
 export class MaterialDesignModule {}
