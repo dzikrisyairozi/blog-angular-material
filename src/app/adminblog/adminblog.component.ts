@@ -57,7 +57,7 @@ export class AdminblogComponent {
     'title',
     'image',
     'published_at',
-    // 'actions',
+    'actions',
   ];
   dataSource = DATA_SOURCE;
 }
