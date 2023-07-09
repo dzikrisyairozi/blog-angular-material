@@ -2,8 +2,15 @@
     display: flex;
 }
 
+.flex-col {
+    flex-direction: column;
+}
+
 .justify-content-between {
     justify-content: space-between;
+}
+.justify-content-center{
+    justify-content: center
 }
 
 .m-auto {
