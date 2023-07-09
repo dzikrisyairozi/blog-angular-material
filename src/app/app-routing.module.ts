@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './auth/login/login.component';
 import { BlogPageComponent } from './blogs/blog-page/blog-page.component';
+import { SingleBlogComponent } from './blogs/single-blog/single-blog.component';
+import { PostComponent } from './blogs/post/post.component';
 
 const routes: Routes = [
   {
@@ -11,6 +13,10 @@ const routes: Routes = [
   {
     path: 'blog',
     component: BlogPageComponent,
+  },
+  {
+    path: 'blog/my-best-blog',
+    component: PostComponent,
   },
 ];
 
