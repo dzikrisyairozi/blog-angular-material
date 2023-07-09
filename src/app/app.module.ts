@@ -5,12 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MaterialDesignModule} from '../app/material-design/material-design.module';
-import { LoginComponent } from './auth/login/login.component'
+import { LoginComponent } from './auth/login/login.component';
+import { BlogsComponent } from './blogs/blogs/blogs.component';
+import { BlogPageComponent } from './blogs/blog-page/blog-page.component';
+import { SingleBlogComponent } from './blogs/single-blog/single-blog.component'
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    BlogsComponent,
+    BlogPageComponent,
+    SingleBlogComponent
   ],
   imports: [
     BrowserModule,
