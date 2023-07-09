@@ -3,8 +3,25 @@
 <table mat-table [dataSource]="dataSource" class="">
     <mat-text-column name="id"></mat-text-column>
     <mat-text-column name="title"></mat-text-column>
-    <mat-text-column name="image"></mat-text-column>
-    <mat-text-column name="published_at"></mat-text-column>
+    <ng-container matColumnDef="image">
+        <th mat-header-cell *matHeaderCellDef>Thumbnail</th>
+        <td mat-cell *matCellDef="let data">
+            <img [src]="data.image" width="128" height="64" class="rounded" alt="">
+        </td> 
+    </ng-container>
+    <ng-container matColumnDef="published_at">
+        <th mat-header-cell *matHeaderCellDef>Published At</th>
+        <td mat-cell *matCellDef="let data"> {{data.published_at}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="actions">
+        <th mat-header-cell *matHeaderCellDef>Actions</th>
+        <td mat-cell *matCellDef="let data" class="flex gap-2"> 
+            <button mat-raised-button color="warn">Delete</button>
+            <button mat-raised-button color="accent">Edit</button>
+        </td>
+    </ng-container>
+    
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 </table>
