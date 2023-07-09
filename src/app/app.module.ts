@@ -8,6 +8,7 @@ import { MaterialDesignModule } from '../app/material-design/material-design.mod
 import { LoginComponent } from './auth/login/login.component';
 import { BlogPageComponent } from './blogs/blog-page/blog-page.component';
 import { SingleBlogComponent } from './blogs/single-blog/single-blog.component';
+import { PostComponent } from './blogs/post/post.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { SingleBlogComponent } from './blogs/single-blog/single-blog.component';
     LoginComponent,
     BlogPageComponent,
     SingleBlogComponent,
+    PostComponent,
   ],
   imports: [
     BrowserModule,
