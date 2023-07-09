@@ -8,6 +8,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { MatChipsModule } from '@angular/material/chips';
 
 @NgModule({
   declarations: [],
@@ -21,6 +22,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
     MatDividerModule,
     MatProgressSpinnerModule,
     MatGridListModule,
+    MatChipsModule,
   ],
   exports: [
     MatButtonModule,
@@ -31,6 +33,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
     MatDividerModule,
     MatProgressSpinnerModule,
     MatGridListModule,
+    MatChipsModule,
   ],
 })
 export class MaterialDesignModule {}
