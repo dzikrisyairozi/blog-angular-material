@@ -1,7 +1,7 @@
-<div class="flex justify-center">
+<div class="flex min-h-screen justify-center">
     <div class="m-auto">
 
-        <mat-card>    
+        <mat-card class="w-[512px]">    
             <mat-card-header>
                 <mat-card-title class="text-white">
                     Login Here
@@ -16,13 +16,19 @@
                     <mat-label>Email</mat-label>
                     <input type="email" required matInput placeholder="Enter Your Email">
                     </mat-form-field>
+                    <mat-divider></mat-divider>
                     <mat-form-field>
                         <mat-label>Password</mat-label>
                         <input type="password" required matInput placeholder="Enter Your Password">
                     </mat-form-field>
-                    <button type="submit" mat-raised-button>Login</button>
                 </form>  
             </mat-card-content>
+            <mat-card-actions class="">
+                <button (click)="login()" type="submit" mat-raised-button color="primary" class="w-full">
+                    <mat-spinner *ngIf="isLoading" diameter="12" color="accent"></mat-spinner>
+                    <span *ngIf="!isLoading">Login</span>
+                </button>
+            </mat-card-actions>
         </mat-card>
     </div>
 </div>
