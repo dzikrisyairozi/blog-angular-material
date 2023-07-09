@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { DeleteDialogComponent } from '../delete-dialog/delete-dialog.component';
 
 export interface PeriodicElement {
   id: number;
@@ -60,4 +62,18 @@ export class AdminblogComponent {
     'actions',
   ];
   dataSource = DATA_SOURCE;
+
+  constructor(public dialog: MatDialog) {}
+
+  // ngOnInit():void;
+
+  delete(id: number) {
+    const dialogRef = this.dialog.open(DeleteDialogComponent);
+
+    dialogRef.afterClosed().subscribe((result) => {
+      if (result === 'true') {
+        this.dataSource = this.dataSource.filter((data) => data.id != id);
+      }
+    });
+  }
 }
