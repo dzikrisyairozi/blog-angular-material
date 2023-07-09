@@ -4,8 +4,24 @@
       <mat-card-title class="text-white">My Blog</mat-card-title>
       <mat-card-subtitle>Blog Summary</mat-card-subtitle>
     </mat-card-header>
-    <img mat-card-lg-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
     <mat-card-content class="text-white">
         {{longText}}
       </mat-card-content>
+      <mat-card-footer>
+        <mat-chip-listbox aria-label="Dog selection">
+            <mat-chip>
+              <img matChipAvatar src="https://material.angular.io/assets/img/examples/shiba1.jpg" alt="Photo of a Shiba Inu"/>
+              Dog one
+            </mat-chip>
+            <mat-chip color="primary" selected>
+              <img matChipAvatar src="https://material.angular.io/assets/img/examples/shiba1.jpg" alt="Photo of a Shiba Inu"/>
+              Dog two
+            </mat-chip>
+            <mat-chip color="accent">
+              <img matChipAvatar src="https://material.angular.io/assets/img/examples/shiba1.jpg" alt="Photo of a Shiba Inu"/>
+              Dog three
+            </mat-chip>
+          </mat-chip-listbox>
+      </mat-card-footer>
   </mat-card>
