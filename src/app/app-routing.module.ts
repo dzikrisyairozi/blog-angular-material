@@ -4,6 +4,7 @@ import { LoginComponent } from './auth/login/login.component';
 import { BlogPageComponent } from './blogs/blog-page/blog-page.component';
 import { SingleBlogComponent } from './blogs/single-blog/single-blog.component';
 import { PostComponent } from './blogs/post/post.component';
+import { AdminblogComponent } from './adminblog/adminblog.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,10 @@ const routes: Routes = [
   {
     path: 'blog/my-best-blog',
     component: PostComponent,
+  },
+  {
+    path: 'admin/blog',
+    component: AdminblogComponent,
   },
 ];
 
